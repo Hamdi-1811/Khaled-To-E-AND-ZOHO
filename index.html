@@ -58,7 +58,7 @@
 
 <script type="module">
 let kb = [];
-fetch('/kb.json').then(r => r.json()).then(d => kb = d.entries);
+fetch('kb.json').then(r => r.json()).then(d => kb = d.entries);
 
 function search() {
   const q = document.getElementById('question').value.trim().toLowerCase();
