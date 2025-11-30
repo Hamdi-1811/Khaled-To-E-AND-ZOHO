@@ -1,0 +1,256 @@
+{
+  "module_metadata": {
+    "module_id": "05",
+    "title": "Sales Scripts & Objection Handling",
+    "purpose": "Ready-to-use scripts, email templates, and responses to common objections",
+    "total_scripts": 80,
+    "last_updated": "2025-11-30"
+  },
+  "objection_handling": {
+    "price_objections": [
+      {
+        "objection": "It's too expensive / We can't afford it",
+        "why_they_say_it": "Sticker shock, haven't calculated ROI, comparing to free tools, or genuinely no budget",
+        "bad_response": "But it's actually cheap compared to competitors!",
+        "good_responses": [
+          {
+            "response": "I understand. Can I ask - what are you currently spending on [the problem]? (Time, money, lost opportunities)",
+            "follow_up": "Let's calculate together. You mentioned X hours per week on manual work. That's Y hours per month. At $Z per hour, you're already spending $W. Our solution is $P per month and cuts that time by 70%. You're actually SAVING $(W-P) every month. Does that change the picture?",
+            "principle": "Reframe as investment with ROI, not expense"
+          },
+          {
+            "response": "Fair concern. Let me ask - what's the cost of your current situation? How many leads are you losing? How much is tied up in excess inventory? What are late payment penalties costing you?",
+            "follow_up": "Most clients find that solving just ONE of these problems pays for the software 10x over. Which problem is most expensive for you?",
+            "principle": "Quantify the cost of doing nothing"
+          },
+          {
+            "response": "I hear you. Out of curiosity, if you could solve [their pain point] completely, what would that be worth to your business?",
+            "follow_up": "[They give number] And our solution costs $X/month. If it delivers even half that value, it's a no-brainer, right?",
+            "principle": "Value-based selling - focus on outcome, not price"
+          },
+          {
+            "response": "Expensive compared to what? Compared to free (but broken) Excel? Or compared to losing deals because of poor follow-up? Or compared to [competitor] which costs 3x more?",
+            "follow_up": "Let me show you exactly what you're getting for this investment...",
+            "principle": "Reframe the comparison"
+          }
+        ],
+        "when_to_walk_away": "If after showing clear ROI they still say 'no budget', they're either not the decision maker, not a priority for them, or genuinely can't afford (wrong customer). Move on."
+      },
+      {
+        "objection": "We're already using [Competitor] and it's expensive to switch",
+        "why_they_say_it": "Switching cost fear, inertia, sunken cost fallacy, or genuine migration complexity",
+        "good_responses": [
+          {
+            "response": "That's a fair point. Can I ask - how happy are you with [Competitor]? If it was perfect, we wouldn't be talking, right?",
+            "follow_up": "What are the main frustrations? [Listen] Those frustrations are costing you money/time. Is continuing with those frustrations really less expensive than switching?",
+            "principle": "Highlight the cost of staying with bad solution"
+          },
+          {
+            "response": "I understand. Most of our clients came from [Competitor]. They were worried about migration too. We provide migration support - your data transferred safely. Most are up and running within a week.",
+            "follow_up": "The question is: is one week of transition worth solving your [pain point] for the next 3 years? Most clients say the best decision they made was switching sooner rather than later.",
+            "principle": "De-risk the switch, create urgency"
+          },
+          {
+            "response": "Fair. But staying with something that's not working is also expensive. You're paying for [Competitor], PLUS dealing with [their pain points]. That's double cost. We can save you money (Zoho typically 40-60% cheaper) AND solve the pain. Isn't that worth exploring?",
+            "principle": "Show total cost of inadequate solution"
+          }
+        ]
+      },
+      {
+        "objection": "Can we get a discount / free trial / custom pricing?",
+        "why_they_say_it": "Testing your flexibility, genuine budget constraint, or habitual negotiation",
+        "good_responses": [
+          {
+            "response": "Zoho offers a free trial for most apps - you can test it fully before buying. Let's get you started on that trial, and I'll help ensure you see the value. Fair?",
+            "principle": "Free trial is the 'discount' - offer value demonstration instead"
+          },
+          {
+            "response": "I appreciate you asking. Zoho's pricing is already very competitive - typically 40-60% below competitors for the same features. The pricing is standard across all customers to keep it fair. However, I can help you optimize which apps you actually need to keep costs down. Let's look at your specific requirements...",
+            "principle": "Hold pricing, but help them optimize"
+          },
+          {
+            "response": "If price is the only thing stopping you, let me ask - if we were the same price as [cheaper competitor], would you choose us? [If yes] Why? [They list benefits] So the value you're getting is worth more than the price difference, right? [If no] Then price isn't actually the issue - let's talk about what's really concerning you.",
+            "principle": "Smoke out true objection"
+          }
+        ]
+      }
+    ],
+    "product_fit_objections": [
+      {
+        "objection": "We need something specific to our industry / vertical-specific solution",
+        "why_they_say_it": "Believe generic solutions won't fit their 'unique' needs, or competitor sold them on industry-specific positioning",
+        "good_responses": [
+          {
+            "response": "That's smart thinking. Can you tell me what specifically about your industry requires specialized features?",
+            "follow_up": "[Listen] Actually, [X% of our clients] are in [their industry] and they're using Zoho successfully. The core needs - [CRM/inventory/accounting/etc] - are similar across industries. The 'industry-specific' stuff is usually just field customization, which Zoho handles brilliantly. Let me show you...",
+            "principle": "Challenge assumption, show social proof from their industry"
+          },
+          {
+            "response": "I understand. But here's the thing - Zoho is highly customizable. We can mold it to your specific workflow. Industry-specific solutions are often rigid and overpriced because they lock you in. With Zoho, you get flexibility + lower cost. What specific features do you think you need?",
+            "principle": "Turn 'generic' into 'flexible advantage'"
+          },
+          {
+            "response": "Fair point. We work with many [industry] companies. Out of curiosity, what do you think makes your industry unique in terms of software needs?",
+            "follow_up": "[They explain] Got it. Let me show you how we've configured Zoho for other [industry] clients who had the exact same concerns...",
+            "principle": "Use case studies from their industry"
+          }
+        ]
+      },
+      {
+        "objection": "It's too complicated / We need something simple",
+        "why_they_say_it": "Overwhelmed by features, had bad experience with complex software, or team is not tech-savvy",
+        "good_responses": [
+          {
+            "response": "I totally get that. Here's the good news - you don't have to use every feature. We'll set you up with just what you need. Think of it like a smartphone - has 100 features, but you probably use 10 regularly. Zoho is the same - use what you need, ignore the rest.",
+            "principle": "Simplify perception, modular adoption"
+          },
+          {
+            "response": "Simpler than what you're doing now? You mentioned [manual process]. Our solution actually simplifies that. Let me show you side-by-side - your current process vs. with Zoho. Which looks simpler?",
+            "principle": "Reframe - compare to their current chaos, not to 'nothing'"
+          },
+          {
+            "response": "Fair concern. That's why we provide implementation support and training. Most teams are productive within a week. It's much simpler than [Salesforce/SAP/etc]. Would a quick demo help? I can show you how simple the daily use actually is.",
+            "principle": "Offer to demonstrate simplicity"
+          }
+        ]
+      },
+      {
+        "objection": "Our team won't use it / We tried CRM before and it failed",
+        "why_they_say_it": "Past failure with software adoption, fear of change resistance, bad implementation experience",
+        "good_responses": [
+          {
+            "response": "I hear this a lot. Can I ask - why do you think it failed before? [Listen: usually poor training, no management buy-in, wrong tool, or too complex]",
+            "follow_up": "Those are the typical reasons. Here's how we're different: [Address their specific failure reason]. Plus, we've learned that team adoption comes from showing immediate value. We start with the ONE biggest pain point, solve that first, get team hooked, then expand. Sound better than before?",
+            "principle": "Learn from past failure, position as different approach"
+          },
+          {
+            "response": "Your team will use it if it makes their life EASIER, not harder. They're not using it if it's more work. Let me ask - what if the CRM meant they could close deals 20% faster with less admin work? Would they resist that?",
+            "follow_up": "That's our approach - eliminate busywork, make selling easier. That's why teams adopt Zoho.",
+            "principle": "Show value to end users, not just management"
+          },
+          {
+            "response": "Totally fair. Team adoption is critical. That's why Zoho has a mobile app - your sales team lives on their phone, right? They can log calls, check leads, update deals from their phone - easier than switching to laptop. For accountability, managers get dashboards. For salespeople, it's convenience. Win-win.",
+            "principle": "Address mobile/convenience factor"
+          }
+        ]
+      }
+    ],
+    "timing_objections": [
+      {
+        "objection": "We're too busy right now / Maybe in a few months",
+        "why_they_say_it": "Genuine busy period, procrastination, or polite rejection",
+        "good_responses": [
+          {
+            "response": "I completely understand - you're busy, which is probably why you're looking for a solution in the first place, right?",
+            "follow_up": "Here's my experience: companies say 'we're too busy' and wait. But the problem gets worse. When is it ever NOT busy? The best time to fix the problem is before it becomes a crisis. Can we at least get you started with a trial so it's ready when you have bandwidth?",
+            "principle": "Challenge the waiting logic, create urgency"
+          },
+          {
+            "response": "Fair. Can I ask - will being busy get better in a few months, or is this just how it is? [Usually 'this is how it is'] Then waiting doesn't help, right? The solution is to implement something NOW that makes you LESS busy. That's the point.",
+            "principle": "Show that waiting makes it worse"
+          },
+          {
+            "response": "I respect that. How about this - I'll set everything up for you, minimal involvement from your end. When you're ready to go live, it's ready. Would that work?",
+            "principle": "Reduce friction, take ownership of setup"
+          }
+        ],
+        "when_its_real_procrastination": "If they keep pushing indefinitely, they're not a real prospect. Set a follow-up date and move on. If they miss that too, disqualify."
+      },
+      {
+        "objection": "We need to think about it / discuss internally",
+        "why_they_say_it": "Need consensus, not the final decision maker, genuine consideration, or polite rejection",
+        "good_responses": [
+          {
+            "response": "Absolutely, this is an important decision. To help your discussion, can I ask - what specific aspects do you need to think about? Is it budget, features, timing, or something else?",
+            "follow_up": "[They answer] Great. Let me address those points so you have clarity for your internal discussion... [Address concerns] Does that help? What else do you need to feel confident?",
+            "principle": "Uncover real concerns, address before they leave"
+          },
+          {
+            "response": "Of course. Who else needs to be part of this decision? [They tell you] Would it make sense to schedule a brief call with them so I can answer questions directly? Often faster than playing telephone.",
+            "principle": "Get to all decision makers"
+          },
+          {
+            "response": "Makes sense. In my experience, when clients need to think about it, it's usually because one of three things: concern about cost, concern about implementation, or concern about team adoption. Which one is it for you?",
+            "follow_up": "[They reveal real objection] Let's solve that right now so you don't have to wonder...",
+            "principle": "Force clarity on real objection"
+          }
+        ]
+      }
+    ],
+    "competitor_objections": [
+      {
+        "objection": "We're already using [Salesforce / HubSpot / QuickBooks / etc.]",
+        "responses_by_competitor": {
+          "salesforce": "Salesforce is a great tool - for enterprises with massive budgets and dedicated admins. But it's expensive ($75+/user vs our $14-40), complex to customize, and long implementation. For most businesses, it's overkill. You're likely using 20% of features and paying for 100%. We give you what you actually need at 1/3 the cost. Plus setup in days, not months. Does that resonate?",
+          "hubspot": "HubSpot is solid, especially for marketing. But they have a tricky pricing model - free CRM, then charge heavily for features you need. You'll hit contact limits and paywalls. Zoho is transparent pricing, includes features HubSpot charges extra for, and you own your data (HubSpot has contact limits even on paid plans). Plus Zoho integrates sales + marketing + operations seamlessly. Worth comparing side-by-side?",
+          "quickbooks": "QuickBooks is popular for good reason. But if you're growing beyond basic accounting, you'll hit limits. Zoho Books has everything QuickBooks has, plus better inventory management, better CRM integration, lower cost, and built-in GST/VAT compliance (especially for India/international). Also, no year-end migration hassles. Ready for a comparison?",
+          "microsoft_365": "Microsoft is great for email and documents. But for CRM, project management, helpdesk? Not their strength. You'd need Dynamics (extremely expensive), multiple disconnected tools, or third-party add-ons. Zoho is purpose-built for business operations. You can keep Microsoft for email/Office and use Zoho for everything else - they integrate beautifully. Want to see how?",
+          "google_workspace": "Google Workspace is excellent for email and collaboration. But Sheets isn't a CRM, Drive isn't a project manager. Zoho integrates perfectly with Google Workspace - use Gmail, but get real CRM, accounting, project management. Best of both worlds. Make sense?"
+        }
+      }
+    ]
+  },
+  "email_templates": [
+    {
+      "template_name": "Initial Cold Outreach Email",
+      "use_when": "First contact with a prospect",
+      "subject_line_options": [
+        "[First Name], quick question about [their company] operations",
+        "Are you losing leads? (most [industry] companies are)",
+        "[First Name], 5-minute solution to [specific pain point]"
+      ],
+      "email_body": "Hi [First Name],\n\nI work with [industry] companies like [Company Name] and noticed [specific observation about their business - e.g., 'you're growing fast with 3 locations now'].\n\nQuick question: How are you currently handling [specific process - e.g., 'lead management across your sales team']?\n\nMost [industry] companies I talk to are struggling with [specific pain - e.g., 'leads falling through cracks between WhatsApp, Excel, and email'].\n\nIf that sounds familiar, I'd love to show you how companies like [similar company] solved it with Zoho in under a week.\n\n15-minute call this week? I'll share exactly what they did.\n\n[Your Name]\n[Your Title]\n[Contact Info]\n\nP.S. Even if you're managing fine now, worth chatting about what happens when you scale to [next milestone].",
+      "why_it_works": "Personalized, identifies with their pain, social proof, clear CTA, low commitment (15 min)",
+      "what_to_avoid": "Don't pitch product features. Don't say 'I sell CRM software'. Focus on their problem."
+    },
+    {
+      "template_name": "Follow-up After Demo Email",
+      "use_when": "After demo/presentation meeting",
+      "subject_line": "Quick recap + next steps for [Company Name]",
+      "email_body": "Hi [First Name],\n\nGreat speaking with you today! Quick recap of what we discussed:\n\n✅ Your main challenge: [specific pain point they mentioned]\n✅ Solution: [specific Zoho apps recommended]\n✅ Expected outcome: [specific benefit - e.g., '25-30% faster quote-to-close']\n✅ Investment: $[amount]/month\n✅ ROI: Based on your numbers, you'll save/gain $[amount] per month\n\nNext steps:\n1. [Action item for prospect - e.g., 'Share with your team']\n2. [Your action - e.g., 'I'll send trial access']\n3. [Mutual action - e.g., 'Schedule implementation kickoff call']\n\nYou mentioned [specific concern]. To address that: [brief answer].\n\nQuestions? Call me directly at [number].\n\nWhen would you like to get started?\n\n[Your Name]",
+      "why_it_works": "Recap builds clarity, shows ROI again, clear next steps, addresses concerns proactively",
+      "follow_up_timing": "If no response in 3 days, call. If no response in 7 days, send another email."
+    },
+    {
+      "template_name": "Proposal/Quote Email",
+      "use_when": "Sending formal pricing proposal",
+      "subject_line": "Zoho solution for [Company Name] - Full proposal",
+      "email_body": "Hi [First Name],\n\nAs discussed, here's your customized Zoho solution:\n\n📊 YOUR CURRENT SITUATION:\n- [Pain point 1 with impact]\n- [Pain point 2 with impact]\n- [Pain point 3 with impact]\n- Estimated cost of current situation: $[amount]/month in time + lost opportunity\n\n✅ RECOMMENDED SOLUTION:\n- [App 1]: [What it solves]\n- [App 2]: [What it solves]\n- [App 3]: [What it solves]\n\n💰 INVESTMENT:\n- Monthly: $[amount]\n- Setup/Implementation: $[amount] (one-time) OR Included\n- Training: Included\n\n📈 EXPECTED RESULTS:\n- [Benefit 1 with metric]\n- [Benefit 2 with metric]\n- [Benefit 3 with metric]\n- ROI: [X]x return on investment\n\n⏱️ TIMELINE:\n- Setup: [timeframe]\n- Training: [timeframe]\n- Go-live: [timeframe]\n\n🎯 NEXT STEPS:\nIf this looks good, let's schedule implementation kickoff for [date].\n\nQuestions? Let's discuss on a quick call.\n\n[Your Name]\n[Contact]\n\nAttached: Detailed proposal PDF",
+      "why_it_works": "Shows current pain, solution, investment, ROI, timeline - complete picture. Easy to forward internally."
+    },
+    {
+      "template_name": "Re-engagement Email (Dead Lead)",
+      "use_when": "Lead went cold 2-6 months ago",
+      "subject_line_options": [
+        "Still struggling with [pain point]?",
+        "[First Name], checking in",
+        "Bad timing before. Is now better?"
+      ],
+      "email_body": "Hi [First Name],\n\nWe spoke [timeframe] ago about solving [specific pain point] at [Company].\n\nTiming wasn't right then. Totally understand.\n\nJust checking in - are you still dealing with [pain point]? Or did you solve it?\n\nIf still an issue, I have a 10-minute solution to show you. Companies like [similar company] implemented it in under a week.\n\nWorth a quick call?\n\n[Your Name]\n\nP.S. If timing is still off, no worries - I'll check back in a few months.",
+      "why_it_works": "Acknowledges past interaction, respects their time, offers value, easy out",
+      "response_rate": "30-40% respond, many say 'yes now is better timing'"
+    }
+  ],
+  "pitch_frameworks": [
+    {
+      "framework_name": "The ROI Pitch",
+      "use_when": "Prospect is analytical or budget-conscious",
+      "structure": "Current cost of problem → Solution cost → Net savings → Time to ROI",
+      "example": "You mentioned spending 20 hours/month on manual invoicing and chasing payments. That's $400 in labor cost, plus delayed cash flow costing you about $800/month in opportunity cost. Total: $1,200/month problem. Zoho Books costs $40/month and cuts invoicing time to 2 hours ($40 labor) while speeding up payment collection by 40%. Net savings: $1,160/month. ROI in month 1. No-brainer, right?"
+    },
+    {
+      "framework_name": "The Before/After Story Pitch",
+      "use_when": "Prospect relates to stories/case studies",
+      "structure": "Client similar to them → Their problem → What they implemented → Results achieved",
+      "example": "Let me tell you about [Similar Company]. They were exactly like you - [industry], [size], struggling with [same pain]. They were losing [problem impact]. We implemented [solution] in [timeframe]. Within [period], they saw [specific results]. They said the only regret was not doing it sooner. Want to see if we can do the same for you?"
+    },
+    {
+      "framework_name": "The Gap Pitch",
+      "use_when": "Prospect doesn't realize the gap between current state and possible state",
+      "structure": "Where you are → Where you could be → What's stopping you → How we bridge the gap",
+      "example": "Right now, you're converting 8% of leads. Your competitors in [industry] who use proper CRM systems are converting 15-20%. That gap represents lost revenue of about $X/month for you. What's stopping you from closing that gap? Usually it's just not having the system. We can bridge that gap in 2 weeks. Interested?"
+    }
+  ],
+  "keywords": ["objection handling", "sales scripts", "email templates", "pitch", "closing"],
+  "tags": ["objections", "scripts", "email", "pitch", "closing", "essential"]
+}

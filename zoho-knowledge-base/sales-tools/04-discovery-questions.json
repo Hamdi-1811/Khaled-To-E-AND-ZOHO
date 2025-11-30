@@ -1,0 +1,293 @@
+{
+  "module_metadata": {
+    "module_id": "04",
+    "title": "Discovery Questions Master Guide",
+    "purpose": "Strategic questions to uncover pain points, qualify leads, and map problems to Zoho solutions",
+    "total_question_sets": 150,
+    "last_updated": "2025-11-30"
+  },
+  "question_frameworks": [
+    {
+      "framework_name": "Initial Qualification Questions",
+      "purpose": "Determine if prospect is worth pursuing",
+      "use_when": "First conversation, cold call, or initial meeting",
+      "questions": [
+        {
+          "question": "Tell me about your business - what do you do?",
+          "why_ask": "Understand industry, business model, identify if it fits any Zoho sweet spots",
+          "what_to_listen_for": ["Industry mentioned", "Business model (B2B/B2C)", "Products/services sold", "Target customers"],
+          "follow_up_based_on_answer": "If they mention selling, follow up with lead management questions. If they mention customers, follow with support questions. If they mention team, ask about collaboration."
+        },
+        {
+          "question": "How many people work in your company?",
+          "why_ask": "Size determines which solutions and tiers to recommend, pricing expectations",
+          "what_to_listen_for": ["Team size", "Multiple locations?", "Remote/hybrid?", "Growing or stable?"],
+          "red_flags": "Under 5 people with simple needs might not need multiple apps",
+          "green_flags": "10+ people with growth plans = good fit for Zoho suite"
+        },
+        {
+          "question": "What are your biggest business challenges right now?",
+          "why_ask": "Open-ended to let them reveal their pain points in their own words",
+          "what_to_listen_for": ["Operational inefficiencies", "Growth bottlenecks", "Team coordination issues", "Customer management problems", "Financial visibility gaps"],
+          "mapping": {
+            "if_they_say_growing_too_fast": "CRM + Projects + People for structure",
+            "if_they_say_losing_leads": "CRM + Forms + SalesIQ",
+            "if_they_say_cash_flow_issues": "Books + CRM for better invoicing and payment tracking",
+            "if_they_say_team_coordination": "Projects + Cliq + WorkDrive"
+          }
+        },
+        {
+          "question": "What tools/software are you currently using to run your business?",
+          "why_ask": "Understand current tech stack, identify gaps, understand their tech-savviness",
+          "what_to_listen_for": ["Excel/Google Sheets (manual processes)", "Competitor tools (switching opportunity)", "Disconnected tools (integration opportunity)", "Nothing = opportunity"],
+          "follow_up": "And how's that working for you? What are you frustrated with?"
+        },
+        {
+          "question": "Are you actively looking for a solution, or just exploring?",
+          "why_ask": "Gauge urgency and buying timeline",
+          "what_to_listen_for": ["Urgent pain = hot lead", "Just exploring = nurture lead", "Boss told me to look = medium priority"],
+          "qualification": "Urgent pain + budget + decision maker = qualified lead to prioritize"
+        }
+      ]
+    },
+    {
+      "framework_name": "CRM-Specific Discovery Questions",
+      "purpose": "Uncover sales process pain points that CRM solves",
+      "use_when": "Prospect mentions sales, leads, customers, or sales team",
+      "questions": [
+        {
+          "question": "How do you currently track your leads and customers?",
+          "why_ask": "Identify if they're using manual methods (prime CRM candidates)",
+          "ideal_pain_answers": ["Excel spreadsheet", "WhatsApp", "Notebook", "Email inbox", "Nothing organized", "Sales team's personal phones"],
+          "red_flags": ["Happy with current CRM and no pain points"],
+          "follow_up": "Can I ask - if I called you right now and asked 'show me all leads from last month who haven't been followed up', how long would it take you to pull that up?"
+        },
+        {
+          "question": "How many leads do you get per month, and from which sources?",
+          "why_ask": "Volume determines need urgency; multiple sources = lead chaos",
+          "what_to_listen_for": ["High volume (50+ leads/month) with manual tracking = big pain", "Multiple sources (website, ads, referrals, walk-ins) = scattered data"],
+          "pain_indicator": "If they can't answer precisely or have to guess = data visibility problem",
+          "solution_pitch": "CRM captures all sources automatically and gives you exact numbers in real-time"
+        },
+        {
+          "question": "What happens when a lead comes in? Walk me through the process.",
+          "why_ask": "Identify workflow gaps, manual steps, and drop-off points",
+          "what_to_listen_for": ["Manual data entry", "Delay in follow-up", "Unclear assignment", "No automated reminder", "Lost leads"],
+          "pain_indicators": [
+            "They say: 'Someone from team notes it down'",
+            "'We try to call them when we can'",
+            "'Sometimes leads fall through the cracks'",
+            "'We have to ask each salesperson what they're working on'"
+          ],
+          "solution_mapping": "Every pain point mentioned = CRM feature benefit"
+        },
+        {
+          "question": "How do you assign leads to your sales team?",
+          "why_ask": "Identify lead distribution chaos",
+          "pain_answers": ["Manually via WhatsApp", "First-come-first-serve (unfair)", "Manager decides (bottleneck)", "No clear process"],
+          "solution_pitch": "CRM can auto-assign based on territory, product, lead score, workload - fair and automatic"
+        },
+        {
+          "question": "How do you ensure leads are followed up on time?",
+          "why_ask": "Uncover follow-up failures",
+          "pain_answers": ["We don't", "Sales team supposed to remember", "Manual reminders", "Excel with reminder dates no one checks"],
+          "critical_follow_up": "What percentage of leads do you think fall through the cracks due to no follow-up?",
+          "solution_pitch": "CRM automatic reminders, overdue alerts, manager visibility - nothing falls through"
+        },
+        {
+          "question": "Can you see your sales pipeline right now - which deals are about to close, which are stuck?",
+          "why_ask": "Test for pipeline visibility",
+          "pain_answers": ["No", "Have to ask each salesperson", "Excel sheet but not updated", "Only during weekly meetings"],
+          "solution_pitch": "CRM gives real-time pipeline dashboard - see everything instantly, from anywhere"
+        },
+        {
+          "question": "How do you track which marketing source brings your best customers?",
+          "why_ask": "Uncover marketing attribution gap",
+          "pain_answers": ["We don't", "Guessing", "Have a rough idea", "Ask customers"],
+          "solution_pitch": "CRM tracks source for every lead and shows conversion rate by source - know exactly where to invest marketing budget"
+        },
+        {
+          "question": "What happens when a salesperson leaves? What happens to their leads and customer data?",
+          "why_ask": "Identify data loss risk and business continuity issue",
+          "pain_answers": ["Lost", "In their personal phone/email", "Try to recover", "It's a problem"],
+          "solution_pitch": "CRM = all data stays in company system forever, instantly reassign to another rep"
+        }
+      ]
+    },
+    {
+      "framework_name": "Accounting/Books-Specific Discovery Questions",
+      "purpose": "Uncover financial management pain points",
+      "use_when": "Prospect mentions invoicing, accounting, expenses, taxes, or cash flow",
+      "questions": [
+        {
+          "question": "How do you currently create invoices for your customers?",
+          "why_ask": "Identify manual invoicing pain",
+          "pain_answers": ["Word/Excel template", "Manual in accounting software (slow)", "Google Docs", "Email with bank details"],
+          "follow_up": "How long does it take to create one invoice?",
+          "solution_pitch": "Zoho Books: professional invoice in under 60 seconds"
+        },
+        {
+          "question": "Can you tell me right now - what's your profit or loss for last month?",
+          "why_ask": "Test for financial visibility",
+          "pain_answers": ["No", "Have to wait for CA's report", "Rough estimate", "Don't know"],
+          "critical_insight": "If they can't answer immediately = no real-time financial visibility",
+          "solution_pitch": "Books gives real-time P&L dashboard - know your profit anytime, anywhere"
+        },
+        {
+          "question": "How do you track which customers haven't paid you?",
+          "why_ask": "Identify accounts receivable chaos",
+          "pain_answers": ["Excel sheet", "Memory", "Bank statement review", "CA tells us"],
+          "follow_up": "How much money is currently stuck in unpaid invoices?",
+          "solution_pitch": "Books tracks every invoice status, sends automatic reminders, shows aging report - get paid faster"
+        },
+        {
+          "question": "How do you handle GST/VAT filing?",
+          "why_ask": "Uncover tax compliance pain",
+          "pain_answers": ["CA does everything", "Manually collating data", "Stressful last-minute rush", "Often miss deadlines"],
+          "solution_pitch": "Books automatically maintains GST-compliant records, generates returns - CA's work cut by 60%"
+        },
+        {
+          "question": "How much time does your accountant/CA spend on data entry and organizing receipts?",
+          "why_ask": "Quantify wasted time",
+          "pain_answers": ["Days every month", "Hours", "Too much"],
+          "roi_calculation": "If CA spends X hours at Y rate, Books saves Z hours = $$ saved",
+          "solution_pitch": "Books eliminates 70% of manual data entry - your CA's time becomes strategic, not clerical"
+        },
+        {
+          "question": "How long does it take from sending invoice to receiving payment on average?",
+          "why_ask": "Identify cash flow delay",
+          "pain_answers": ["45-60 days", "Long time", "Customers delay"],
+          "solution_pitch": "Books automatic reminders and payment links reduce average collection time by 30-40%"
+        },
+        {
+          "question": "Do you track inventory? How?",
+          "why_ask": "Identify if they need Books (with basic inventory) or Inventory (advanced)",
+          "pain_answers": ["Excel", "Manual count", "Often wrong", "Don't track formally"],
+          "solution_mapping": {
+            "simple_inventory": "Books includes basic inventory",
+            "complex_warehouses": "Zoho Inventory needed"
+          }
+        }
+      ]
+    },
+    {
+      "framework_name": "Support/Help Desk Discovery Questions",
+      "purpose": "Uncover customer support pain points",
+      "use_when": "Prospect mentions customer support, complaints, service requests, or support team",
+      "questions": [
+        {
+          "question": "How do your customers reach you for support? (email, phone, chat, WhatsApp?)",
+          "why_ask": "Identify channel chaos",
+          "pain_answers": ["Multiple scattered channels", "Shared email inbox", "Personal WhatsApp", "No organized system"],
+          "solution_pitch": "Zoho Desk consolidates all channels into one organized ticketing system"
+        },
+        {
+          "question": "Have customers ever said 'I contacted you but no one responded'?",
+          "why_ask": "Identify dropped support requests",
+          "pain_answers": ["Yes", "Sometimes", "Happened before"],
+          "follow_up": "How do you ensure no customer request falls through cracks?",
+          "solution_pitch": "Desk ensures every request becomes a tracked ticket - nothing gets lost"
+        },
+        {
+          "question": "If two agents accidentally respond to the same customer, would you know?",
+          "why_ask": "Test for coordination and visibility",
+          "pain_answers": ["Happens sometimes", "Possible", "We try to avoid it"],
+          "solution_pitch": "Desk shows exactly who's working on what - zero duplication"
+        },
+        {
+          "question": "Can you tell me right now - how many support tickets are pending, and for how long?",
+          "why_ask": "Test for support metrics visibility",
+          "pain_answers": ["No idea", "Lot of emails pending", "Have to check"],
+          "solution_pitch": "Desk dashboard shows everything - pending count, average resolution time, SLA breaches - real-time"
+        },
+        {
+          "question": "How do you measure your support team's performance?",
+          "why_ask": "Identify lack of metrics",
+          "pain_answers": ["We don't", "Customer feedback", "Gut feeling", "Number of complaints"],
+          "solution_pitch": "Desk tracks response time, resolution time, CSAT scores, agent performance - data-driven management"
+        },
+        {
+          "question": "Do you have a knowledge base where customers can find answers themselves?",
+          "why_ask": "Identify self-service opportunity",
+          "pain_answers": ["No", "Some FAQs on website", "Wish we had"],
+          "solution_pitch": "Desk includes knowledge base - reduce repetitive questions by 30-40%, customers get instant answers"
+        }
+      ]
+    },
+    {
+      "framework_name": "Project Management Discovery Questions",
+      "purpose": "Uncover project/task management chaos",
+      "use_when": "Prospect mentions projects, deadlines, team coordination, or client deliverables",
+      "questions": [
+        {
+          "question": "How do you currently track project tasks and deadlines?",
+          "why_ask": "Identify project management chaos",
+          "pain_answers": ["Excel sheets", "WhatsApp groups", "Email threads", "Trello but messy", "People's heads"],
+          "solution_pitch": "Zoho Projects - organized task management with dependencies, Gantt charts, and automatic reminders"
+        },
+        {
+          "question": "How often do projects miss deadlines?",
+          "why_ask": "Quantify the problem",
+          "pain_answers": ["Often", "More than we'd like", "Most projects delay", "Majority"],
+          "critical_follow_up": "What's the main reason for delays?",
+          "common_reasons_that_projects_solves": ["Tasks fall through cracks", "Unclear priorities", "Dependencies not tracked", "No visibility"]
+        },
+        {
+          "question": "If I ask 'what should your team work on today', how would they know?",
+          "why_ask": "Test for clarity and priority communication",
+          "pain_answers": ["They ask me", "Check WhatsApp", "Daily standup meeting", "Email"],
+          "solution_pitch": "Projects shows each team member their tasks, priorities, and deadlines - no confusion"
+        },
+        {
+          "question": "How do you track time spent on projects or clients?",
+          "why_ask": "Identify billing/profitability tracking gap",
+          "pain_answers": ["We don't", "Rough estimates", "Honor system", "Excel timesheets no one fills"],
+          "solution_pitch": "Projects includes timesheet tracking - accurate billing, profitability visibility"
+        },
+        {
+          "question": "When clients ask for project status updates, how long does it take you to compile the information?",
+          "why_ask": "Test for project visibility",
+          "pain_answers": ["Have to ask team", "Compile from various places", "Time-consuming"],
+          "solution_pitch": "Projects client portal - clients see real-time status themselves, reduces your update meetings"
+        }
+      ]
+    }
+  ],
+  "discovery_call_frameworks": {
+    "the_pain_before_solution_framework": {
+      "description": "Don't pitch features. Uncover pain first, then show how Zoho solves it.",
+      "steps": [
+        "1. Ask open-ended question about their process",
+        "2. Listen for pain points (manual work, delays, errors, lack of visibility)",
+        "3. Quantify the pain: 'How much time does that take?' or 'How often does that happen?'",
+        "4. Let them feel the pain: 'That must be frustrating' or 'What's that costing you?'",
+        "5. ONLY THEN pitch the solution specifically to THEIR pain"
+      ],
+      "example": "Instead of: 'Zoho CRM has automatic lead assignment.' Say: 'You mentioned leads sometimes sit for days before anyone contacts them. How many leads do you think you lose that way per month? [They answer] That's painful. If you could automatically assign leads to the right salesperson within 5 minutes of them inquiring, would that solve this problem? [Yes] That's exactly what Zoho CRM does.'"
+    },
+    "the_comparison_close": {
+      "description": "Help them see the cost of NOT changing",
+      "framework": "You're currently spending $X (time/money/lost opportunity) on this problem. Our solution costs $Y. You save $Z. Makes sense?",
+      "example": "You said manual invoicing takes your team 15 hours per month, and you're still collecting payments slowly. That's roughly $400 in wasted time plus lost interest on delayed payments. Zoho Books costs $40/month and cuts that to under 2 hours plus gets you paid 15 days faster. You're ahead $350+ per month immediately. Sound fair?"
+    }
+  },
+  "red_flags_to_disqualify": [
+    "No budget and no pain (just browsing)",
+    "Not the decision maker and won't introduce you to one",
+    "Unrealistic expectations ('I want everything free')",
+    "Just signed long-term contract with competitor",
+    "Business too small for the investment (1-2 person company with $5K annual revenue)",
+    "Looking for industry-specific solution Zoho doesn't offer"
+  ],
+  "green_flags_to_prioritize": [
+    "Urgent pain actively looking for solution",
+    "Budget allocated or clear ROI understanding",
+    "Decision maker on the call",
+    "Growth company (current solution breaking down under scale)",
+    "Using Excel/manual processes (easy to beat)",
+    "Multiple pain points across different departments (upsell opportunity)",
+    "Already using one Zoho app and happy (expansion opportunity)"
+  ],
+  "keywords": ["discovery questions", "qualification", "pain points", "sales questions", "lead qualification"],
+  "tags": ["discovery", "sales_process", "qualification", "questions", "essential"]
+}

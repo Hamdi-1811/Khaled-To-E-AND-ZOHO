@@ -1,0 +1,271 @@
+{
+  "module_metadata": {
+    "module_id": "02",
+    "title": "Industry-Specific Zoho Solutions",
+    "purpose": "Industry-by-industry breakdown of pain points, workflows, and recommended Zoho bundles",
+    "total_industries": 20,
+    "last_updated": "2025-11-30"
+  },
+  "industries": [
+    {
+      "industry_id": "IND-001",
+      "industry_name": "Real Estate",
+      "sub_segments": ["Residential Sales", "Commercial Real Estate", "Property Management", "Real Estate Development"],
+      "typical_business_model": "Commission-based sales, recurring rental management fees, or project-based development",
+      "common_team_structure": "Agents/brokers, sales managers, property managers, admin staff",
+      "key_workflows": [
+        "Lead generation → Nurturing → Site visits → Negotiation → Agreement → Registration",
+        "Property listing → Marketing → Inquiry handling → Showing → Closing",
+        "Tenant management → Lease agreements → Rent collection → Maintenance requests"
+      ],
+      "top_pain_points": [
+        {
+          "pain_point": "Leads scattered across WhatsApp, phone, walk-ins, website - impossible to track",
+          "impact": "30-40% leads lost, no follow-up, duplicate work",
+          "current_workaround": "Excel sheets, WhatsApp groups, notebooks",
+          "questions_to_ask": [
+            "Where do your property inquiries come from?",
+            "How do you assign leads to agents?",
+            "What percentage of leads you follow up with?",
+            "Can you see which agent has which leads right now?"
+          ]
+        },
+        {
+          "pain_point": "Site visit scheduling nightmare - double bookings, agent unavailability, client confusion",
+          "impact": "Lost time, unprofessional image, missed opportunities",
+          "current_workaround": "Phone coordination, manual calendars",
+          "questions_to_ask": [
+            "How do you schedule property showings?",
+            "Ever had double-bookings or agent mixups?",
+            "Can clients see available time slots?"
+          ]
+        },
+        {
+          "pain_point": "Document management chaos - agreements, NOCs, ownership docs scattered",
+          "impact": "Deal delays, compliance risks, lost documents",
+          "current_workaround": "Physical files, email attachments, Google Drive mess",
+          "questions_to_ask": [
+            "Where do you store property documents?",
+            "How long to find a specific document when needed?",
+            "Ever lost important paperwork?"
+          ]
+        },
+        {
+          "pain_point": "Agreement signing delays - waiting for physical signatures",
+          "impact": "Deals falling through, buyer impatience, competitive disadvantage",
+          "current_workaround": "Print, courier, scan cycle",
+          "questions_to_ask": [
+            "How long from agreement to signed contract?",
+            "Lost deals due to paperwork delays?",
+            "How do you handle remote buyers?"
+          ]
+        },
+        {
+          "pain_point": "Commission tracking and calculation confusion",
+          "impact": "Agent disputes, calculation errors, delayed payments",
+          "current_workaround": "Manual Excel calculations",
+          "questions_to_ask": [
+            "How do you calculate agent commissions?",
+            "Ever had commission disputes?",
+            "How long to process commission payments?"
+          ]
+        }
+      ],
+      "recommended_zoho_apps": [
+        {
+          "app": "Zoho CRM",
+          "why": "Central lead management, property listing management, deal pipeline tracking, agent performance visibility",
+          "solves": ["Lead tracking", "Agent assignment", "Pipeline visibility", "Follow-up automation"]
+        },
+        {
+          "app": "Zoho Bookings",
+          "why": "Property showing scheduling, virtual tour bookings, eliminate double-bookings",
+          "solves": ["Site visit scheduling", "Calendar management", "Client self-booking"]
+        },
+        {
+          "app": "Zoho Sign",
+          "why": "Digital agreement signing, faster closures, remote buyer support",
+          "solves": ["Agreement delays", "Physical signature bottleneck", "Remote transactions"]
+        },
+        {
+          "app": "Zoho WorkDrive",
+          "why": "Organized property document storage, easy sharing, version control",
+          "solves": ["Document chaos", "Collaboration", "Compliance"]
+        },
+        {
+          "app": "Zoho Forms",
+          "why": "Website inquiry forms feeding CRM automatically, property registration forms",
+          "solves": ["Website lead capture", "Data collection"]
+        },
+        {
+          "app": "Zoho Campaigns",
+          "why": "Email marketing to property seekers, new listing alerts, market updates",
+          "solves": ["Lead nurturing", "Marketing automation"]
+        }
+      ],
+      "solution_bundles": [
+        {
+          "bundle_name": "Real Estate Starter Bundle",
+          "for_business_size": "Small agency (1-5 agents)",
+          "apps_included": ["Zoho CRM", "Zoho Sign", "Zoho Forms"],
+          "estimated_monthly_cost": "$38",
+          "key_benefits": "Organized lead management, fast agreements, automatic lead capture",
+          "typical_roi": "15-30% increase in closures from better follow-up"
+        },
+        {
+          "bundle_name": "Real Estate Professional Bundle",
+          "for_business_size": "Medium agency (6-20 agents)",
+          "apps_included": ["Zoho CRM", "Zoho Sign", "Zoho Forms", "Zoho Bookings", "Zoho Campaigns"],
+          "estimated_monthly_cost": "$150-250",
+          "key_benefits": "Complete sales automation, scheduling, marketing, digital paperwork",
+          "typical_roi": "25-40% increase in productivity, 20% more closures"
+        },
+        {
+          "bundle_name": "Real Estate Enterprise Bundle",
+          "for_business_size": "Large agency or developer (20+ agents, multiple projects)",
+          "apps_included": ["Zoho CRM", "Zoho Sign", "Zoho Forms", "Zoho Bookings", "Zoho Campaigns", "Zoho Books", "Zoho Projects", "Zoho WorkDrive"],
+          "estimated_monthly_cost": "$400-700",
+          "key_benefits": "End-to-end automation from lead to invoicing, project management for developments, complete document management",
+          "typical_roi": "30-50% productivity increase, significantly faster deal velocity"
+        }
+      ],
+      "real_world_workflow_example": {
+        "scenario": "Residential real estate agency with 8 agents",
+        "workflow_before": "Lead comes via Facebook ad → Agent gets WhatsApp notification → Manually enters in Excel → Calls lead → Schedules site visit on phone → Shows property → Interested → Prints agreement → Courier for signature → Wait 5-7 days → Deal closes or falls through",
+        "workflow_after_zoho": "Lead from Facebook ad → Auto-captured in CRM → Auto-assigned to agent by area → Agent gets mobile notification → Checks lead score (Zia AI) → Sends email + WhatsApp from CRM → Lead books site visit via Zoho Bookings → Shows property → Interested → Sends agreement via Zoho Sign → Signed in 24 hours → Deal moves to closed → Commission calculated automatically",
+        "time_saved": "5-7 days per deal → 1-2 days per deal",
+        "conversion_improvement": "12% close rate → 23% close rate",
+        "roi_explanation": "With 100 leads/month, additional 11 closures. Average commission $1,200. Additional revenue: $13,200/month. Investment: $200/month. ROI: 66x"
+      },
+      "objections_you_will_face": {
+        "we_manage_with_excel": "Excel works until you scale. With 8 agents and 100+ leads/month, Excel breaks. Leads fall through cracks. Can your Excel send automatic reminders? Track email opens? Assign leads by area automatically?",
+        "agents_wont_use_it": "We've seen this. Key is mobile app - agents live on phones. CRM on phone is easier than WhatsApp + Excel. Plus management visibility means better accountability.",
+        "too_expensive": "Let's calculate: You're closing X deals/month with Y% follow-up rate. If CRM increases follow-up to 90% and close rate by even 5%, that's Z additional deals × commission. Math works?",
+        "we_tried_crm_before": "Which one? Why did it fail? Usually: wrong CRM (too complex), poor implementation, no training. Zoho CRM is built for real estate, we ensure proper setup and team adoption."
+      },
+      "discovery_call_script": "I help real estate agencies organize their lead management and close more deals. Quick questions: 1) How many leads do you get per month? 2) How are you tracking them currently? 3) What percentage do you follow up with? 4) Can you see right now which agent has which leads and their status? 5) What happens when a lead comes in - what's the process? [Listen for chaos indicators] Based on what you're saying, here's how we've helped similar agencies...",
+      "keywords": ["real estate", "property", "agents", "listings", "site visits", "agreements", "commission"],
+      "tags": ["industry_real_estate", "sales_heavy", "document_heavy", "scheduling"]
+    },
+    {
+      "industry_id": "IND-002",
+      "industry_name": "Manufacturing",
+      "sub_segments": ["Small-scale manufacturing", "Job shop production", "Process manufacturing", "Assembly manufacturing"],
+      "typical_business_model": "B2B sales, order-based production, inventory-dependent",
+      "common_team_structure": "Sales, production planning, inventory manager, quality control, dispatch, accounts",
+      "key_workflows": [
+        "Inquiry → Quotation → Order → Production planning → Raw material procurement → Manufacturing → Quality check → Dispatch → Invoicing → Payment collection",
+        "Inventory management: Purchase orders → Goods receipt → Stock tracking → Reorder management",
+        "Sales order → Work order → BOM → Production → Stock update → Delivery"
+      ],
+      "top_pain_points": [
+        {
+          "pain_point": "Production planning chaos - no visibility into order pipeline vs capacity",
+          "impact": "Delayed deliveries, overtime costs, customer dissatisfaction",
+          "current_workaround": "Excel sheets, manual coordination, guesswork",
+          "questions_to_ask": [
+            "How do you plan production based on incoming orders?",
+            "Can you see your production capacity vs orders right now?",
+            "How often do you miss delivery deadlines?",
+            "How do you prioritize which orders to produce first?"
+          ]
+        },
+        {
+          "pain_point": "Inventory management nightmare - stock-outs of raw materials stopping production OR overstocking tying up cash",
+          "impact": "Production halts, rush purchases at inflated prices, or $50K-500K stuck in excess inventory",
+          "current_workaround": "Manual stock registers, periodic physical counts, reactive ordering",
+          "questions_to_ask": [
+            "How do you track raw material inventory?",
+            "How often do you run out of critical materials?",
+            "How much money is tied up in excess inventory?",
+            "How do you decide when to reorder?"
+          ]
+        },
+        {
+          "pain_point": "Quotation to order conversion tracking - no visibility into sales pipeline",
+          "impact": "Can't forecast production, can't plan capacity, surprises every month",
+          "current_workaround": "Sales team verbal updates, Excel sheets",
+          "questions_to_ask": [
+            "How do you track quotations sent vs orders received?",
+            "Can you forecast next month's production volume accurately?",
+            "What's your quotation to order conversion rate?"
+          ]
+        },
+        {
+          "pain_point": "Bill of Materials (BOM) management and costing accuracy",
+          "impact": "Incorrect costing leading to losses, material waste, pricing errors",
+          "current_workaround": "Excel BOMs, manual calculations",
+          "questions_to_ask": [
+            "How do you manage BOMs for different products?",
+            "How accurate is your product costing?",
+            "Ever discovered you're selling at a loss?"
+          ]
+        },
+        {
+          "pain_point": "Payment collection delays - invoices sent, payments not tracked",
+          "impact": "Cash flow problems, can't purchase raw materials for next orders",
+          "current_workaround": "Manual follow-ups, phone calls",
+          "questions_to_ask": [
+            "How long does it take to receive payment after delivery?",
+            "How do you track outstanding payments?",
+            "Ever faced cash flow issues despite having orders?"
+          ]
+        }
+      ],
+      "recommended_zoho_apps": [
+        {
+          "app": "Zoho CRM",
+          "why": "Sales pipeline management, quotation tracking, customer management, sales forecasting",
+          "solves": ["Sales visibility", "Forecasting", "Customer communication"]
+        },
+        {
+          "app": "Zoho Inventory",
+          "why": "Raw material and finished goods tracking, purchase orders, reorder points, multi-warehouse management, BOM management",
+          "solves": ["Stock-outs", "Overstocking", "Inventory visibility", "BOMs"]
+        },
+        {
+          "app": "Zoho Books",
+          "why": "Invoicing, payment tracking, expense management, financial reports, GST compliance",
+          "solves": ["Cash flow tracking", "Payment collection", "Financial visibility"]
+        },
+        {
+          "app": "Zoho Projects",
+          "why": "Production planning, job tracking, task management for make-to-order manufacturing",
+          "solves": ["Production planning", "Deadline tracking", "Resource allocation"]
+        },
+        {
+          "app": "Zoho Analytics",
+          "why": "Cross-functional reports - sales vs production, inventory turnover, profitability by product",
+          "solves": ["Business intelligence", "Data-driven decisions"]
+        }
+      ],
+      "solution_bundles": [
+        {
+          "bundle_name": "Manufacturing Starter",
+          "for_business_size": "Small manufacturing unit (10-30 employees, simple products)",
+          "apps_included": ["Zoho Inventory", "Zoho Books"],
+          "estimated_monthly_cost": "$95-140",
+          "key_benefits": "Basic inventory control, financial management, invoicing",
+          "typical_roi": "Reduced stock-outs, better cash flow visibility"
+        },
+        {
+          "bundle_name": "Manufacturing Professional",
+          "for_business_size": "Medium manufacturing (30-100 employees, multiple product lines)",
+          "apps_included": ["Zoho CRM", "Zoho Inventory", "Zoho Books", "Zoho Projects"],
+          "estimated_monthly_cost": "$300-500",
+          "key_benefits": "End-to-end: sales to production to delivery to payment",
+          "typical_roi": "20-30% reduction in stock-outs, 15% faster order fulfillment, improved cash flow"
+        }
+      ],
+      "real_world_workflow_example": {
+        "scenario": "Metal fabrication company, custom orders, 45 employees",
+        "workflow_before": "Customer inquiry via email → Manual quotation in Excel → Quotation sent → Order confirmed verbally → Excel sheet updated → Raw material ordered when noticed shortage → Production when materials arrive → Manual invoice in Word → Payment tracking in notebook",
+        "workflow_after_zoho": "Inquiry → CRM lead → Quotation generated from CRM (saved templates) → Sent & tracked → Order confirmed → Auto work order in Projects → Inventory checked automatically → Materials auto-ordered if low → Production tracked → Inventory updated → Invoice from Books → Auto payment reminders → Analytics show profitability per order",
+        "improvements": "Order fulfillment: 18 days → 12 days average. Stock-outs: 12/month → 2/month. Payment collection: 45 days average → 32 days average. Profitability visibility: monthly after-the-fact → real-time.",
+        "roi": "$450/month investment. Material cost savings (better ordering): $2,000/month. Faster delivery: 15% more orders/month ($8,000 additional revenue). Faster payment: improved cash flow enabling growth. ROI: 22x"
+      },
+      "keywords": ["manufacturing", "production", "inventory", "raw materials", "work orders", "BOM", "factory"],
+      "tags": ["industry_manufacturing", "inventory_heavy", "production", "b2b"]
+    }
+  ]
+}

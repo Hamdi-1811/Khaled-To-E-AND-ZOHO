@@ -1,0 +1,127 @@
+{
+  "module_metadata": {
+    "module_id": "06",
+    "title": "Quick Reference Guides",
+    "purpose": "Cheat sheets, comparison charts, and rapid-lookup information for sales calls",
+    "last_updated": "2025-11-30"
+  },
+  "quick_app_selector": {
+    "title": "30-Second App Selector - Match Problem to Solution",
+    "how_to_use": "Customer mentions problem → Look up → Recommend app",
+    "problem_to_app_map": [
+      {"customer_says": "Leads are getting lost", "recommend": "Zoho CRM", "pitch": "Never lose a lead - automatic capture, tracking, reminders"},
+      {"customer_says": "Can't track sales pipeline", "recommend": "Zoho CRM", "pitch": "See your entire pipeline in real-time, know what's closing this month"},
+      {"customer_says": "Invoicing takes forever", "recommend": "Zoho Books", "pitch": "Create professional invoices in 60 seconds, automatic payment reminders"},
+      {"customer_says": "Don't know our profit", "recommend": "Zoho Books", "pitch": "Real-time P&L dashboard - know your profit anytime"},
+      {"customer_says": "Customers say we never responded", "recommend": "Zoho Desk", "pitch": "Every customer request becomes tracked ticket - nothing gets lost"},
+      {"customer_says": "Projects always late", "recommend": "Zoho Projects", "pitch": "Clear tasks, deadlines, dependencies - deliver on time"},
+      {"customer_says": "Team doesn't know priorities", "recommend": "Zoho Projects", "pitch": "Everyone sees their tasks and priorities - no confusion"},
+      {"customer_says": "Stock-outs losing sales", "recommend": "Zoho Inventory", "pitch": "Real-time stock levels, automatic reorder alerts - never stock out"},
+      {"customer_says": "Too much money in inventory", "recommend": "Zoho Inventory", "pitch": "Optimize stock levels, free up cash tied in excess inventory"},
+      {"customer_says": "Website visitors not converting", "recommend": "Zoho SalesIQ", "pitch": "Live chat, see who's on site, engage before they leave"},
+      {"customer_says": "Email list not being used", "recommend": "Zoho Campaigns", "pitch": "Professional email marketing, automation, know who's interested"},
+      {"customer_says": "Agreement signing takes days", "recommend": "Zoho Sign", "pitch": "Digital signatures, close deals in hours not days"},
+      {"customer_says": "Manual attendance tracking", "recommend": "Zoho People", "pitch": "Digital attendance, leave management, end paper registers"},
+      {"customer_says": "HR drowning in admin work", "recommend": "Zoho People", "pitch": "Automate HR processes, cut admin time by 60%"},
+      {"customer_says": "Can't schedule meetings easily", "recommend": "Zoho Bookings", "pitch": "Clients self-book time slots, eliminates back-and-forth"},
+      {"customer_says": "Forms on website are ugly", "recommend": "Zoho Forms", "pitch": "Beautiful forms, automatic CRM integration, collect payments"},
+      {"customer_says": "Documents scattered everywhere", "recommend": "Zoho WorkDrive", "pitch": "Organized cloud storage, easy sharing, version control"}
+    ]
+  },
+  "pricing_quick_reference": {
+    "title": "Approximate Pricing Guide (Simplify for quick quoting)",
+    "note": "Always verify current pricing on Zoho website - this is for ballpark estimates",
+    "pricing_ranges": [
+      {"app": "Zoho CRM", "typical_range": "$14-52 per user/month", "sweet_spot": "$23/user (Professional)", "free_option": "Yes (3 users)"},
+      {"app": "Zoho Books", "typical_range": "$15-120 per org/month", "sweet_spot": "$40/org (Professional)", "free_option": "Yes (revenue under $50K)"},
+      {"app": "Zoho Desk", "typical_range": "$14-40 per agent/month", "sweet_spot": "$23/agent (Professional)", "free_option": "Yes (3 agents)"},
+      {"app": "Zoho Projects", "typical_range": "$5-10 per user/month", "sweet_spot": "$5/user (Premium)", "free_option": "Yes (2 projects, 3 users)"},
+      {"app": "Zoho Campaigns", "typical_range": "$3-4.5 per 500 contacts/month", "sweet_spot": "$4.5/500 (Professional)", "free_option": "Yes (6K emails/month)"},
+      {"app": "Zoho People", "typical_range": "$1.5-7.5 per employee/month", "sweet_spot": "$3/employee (Professional)", "free_option": "No"},
+      {"app": "Zoho Inventory", "typical_range": "$79-229 per org/month", "sweet_spot": "$129/org (Professional)", "free_option": "Yes (1 warehouse, 50 orders/month)"},
+      {"app": "Zoho SalesIQ", "typical_range": "$10-35 per operator/month", "sweet_spot": "$21/operator (Professional)", "free_option": "Yes (100 chats/month)"},
+      {"app": "Zoho Sign", "typical_range": "$10-24 per user/month", "sweet_spot": "$10/user (Standard)", "free_option": "Yes (5 docs/month)"},
+      {"app": "Zoho Forms", "typical_range": "$10-50 per month", "sweet_spot": "$25/month (Standard)", "free_option": "Yes (3 forms)"}
+    ],
+    "bundle_pricing_estimates": [
+      {"bundle": "Startup Pack", "apps": "CRM + Forms + Sign", "estimate": "$40-70/month", "for": "Solo/small teams"},
+      {"bundle": "SMB Pack", "apps": "CRM + Books + Desk + Projects", "estimate": "$150-300/month", "for": "Growing companies (10-30 people)"},
+      {"bundle": "Complete Business Suite", "apps": "CRM + Books + Desk + Projects + People + Inventory", "estimate": "$400-700/month", "for": "Established businesses (30-100 people)"}
+    ],
+    "pricing_objection_responses": {
+      "seems_expensive": "Compared to Salesforce at $75+/user, Zoho is 1/3 the cost. Compared to doing it manually, even one hour saved per day pays for itself.",
+      "why_not_free_forever": "Free plans are great for testing. For serious business use, paid plans unlock features that drive ROI: automation, integrations, support, limits removed.",
+      "how_does_zoho_make_money_at_these_prices": "Volume + efficiency. Millions of users globally, cloud infrastructure, no bloated sales org (unlike competitors). Savings passed to customers."
+    }
+  },
+  "competitor_comparison_cheat_sheet": {
+    "zoho_crm_vs_competitors": {
+      "vs_salesforce": {"zoho_advantage": "1/3 the cost, easier setup (days vs months), better for SMBs", "when_salesforce_wins": "Enterprise with unlimited budget and complex customization needs"},
+      "vs_hubspot_crm": {"zoho_advantage": "No contact limits, more features included, better value", "when_hubspot_wins": "Heavily marketing-focused companies already using HubSpot Marketing"},
+      "vs_pipedrive": {"zoho_advantage": "Broader features beyond sales, deeper customization, better ecosystem", "when_pipedrive_wins": "Simple sales tracking only, nothing else needed"},
+      "vs_excel_sheets": {"zoho_advantage": "Automated, accessible anywhere, multi-user, no data loss, built-in analytics", "when_excel_wins": "Never (for sales management)"}
+    },
+    "zoho_books_vs_competitors": {
+      "vs_quickbooks": {"zoho_advantage": "Lower cost, better inventory, seamless CRM integration, GST-compliant (India)", "when_quickbooks_wins": "Deep QuickBooks ecosystem dependencies (US market)"},
+      "vs_tally": {"zoho_advantage": "Cloud-based, modern UI, mobile access, auto-updates, no year-end migration", "when_tally_wins": "Local GST practitioner already Tally expert, offline-only needs"},
+      "vs_xero": {"zoho_advantage": "More affordable, includes inventory, part of broader business suite", "when_xero_wins": "Australia/NZ market with deep Xero integrations"}
+    },
+    "zoho_desk_vs_competitors": {
+      "vs_zendesk": {"zoho_advantage": "1/2 the cost, more features in base tiers", "when_zendesk_wins": "Complex enterprise support needs, already Zendesk-trained team"},
+      "vs_freshdesk": {"zoho_advantage": "Similar features, better Zoho ecosystem integration, customization", "when_freshdesk_wins": "Already using Freshworks suite"},
+      "vs_shared_gmail": {"zoho_advantage": "Organized tickets vs email chaos, metrics, SLAs, multi-agent coordination", "when_gmail_wins": "Never (for support management)"}
+    }
+  },
+  "industry_fit_quick_guide": {
+    "title": "Is this industry a good fit for Zoho?",
+    "industries": [
+      {"industry": "Real Estate", "fit": "Excellent", "core_apps": "CRM, Sign, Bookings", "win_rate": "High"},
+      {"industry": "Manufacturing", "fit": "Excellent", "core_apps": "CRM, Inventory, Books, Projects", "win_rate": "High"},
+      {"industry": "E-commerce", "fit": "Excellent", "core_apps": "Commerce, Inventory, Books, Desk", "win_rate": "High"},
+      {"industry": "Professional Services", "fit": "Excellent", "core_apps": "CRM, Projects, Books, People", "win_rate": "High"},
+      {"industry": "Healthcare", "fit": "Good", "core_apps": "CRM, Bookings, Desk, People", "win_rate": "Medium", "note": "Not EMR/EHR, but business operations"},
+      {"industry": "Education", "fit": "Good", "core_apps": "CRM (admissions), Books, Desk", "win_rate": "Medium"},
+      {"industry": "Restaurants", "fit": "Medium", "core_apps": "Books, People, Inventory", "win_rate": "Medium", "note": "Not POS replacement"},
+      {"industry": "Retail", "fit": "Good", "core_apps": "Inventory, Books, CRM", "win_rate": "Medium", "note": "For backend, not POS"},
+      {"industry": "IT Services", "fit": "Excellent", "core_apps": "CRM, Projects, Desk, People", "win_rate": "High"}
+    ]
+  },
+  "common_sales_mistakes_to_avoid": [
+    {"mistake": "Pitching features before understanding pain", "why_bad": "Customer doesn't care about features if they don't see the problem", "do_instead": "Ask discovery questions, uncover pain, THEN show solution"},
+    {"mistake": "Recommending too many apps at once", "why_bad": "Overwhelming, expensive, complex", "do_instead": "Start with 1-3 core apps solving biggest pain, expand later"},
+    {"mistake": "Not quantifying ROI", "why_bad": "Customer sees it as expense, not investment", "do_instead": "Calculate time saved, revenue gained, costs avoided - show the math"},
+    {"mistake": "Comparing to free tools incorrectly", "why_bad": "'It's better than Excel' isn't compelling", "do_instead": "Show cost of Excel (time wasted, errors, scalability limits, opportunity cost)"},
+    {"mistake": "Ignoring implementation concerns", "why_bad": "Customer fears disruption and change management", "do_instead": "Address implementation timeline, training, and support proactively"},
+    {"mistake": "Not following up", "why_bad": "Most deals close after multiple touches", "do_instead": "Structured follow-up schedule, add value each time"},
+    {"mistake": "Talking to wrong person", "why_bad": "Waste time with non-decision-makers", "do_instead": "Qualify decision-making process early, get to the real buyer"}
+  ],
+  "deal_closing_checklist": {
+    "before_you_close": [
+      "✅ Identified all decision makers and influencers",
+      "✅ Understood their buying process and timeline",
+      "✅ Quantified their pain and our solution's ROI",
+      "✅ Addressed all objections and concerns",
+      "✅ Confirmed budget availability",
+      "✅ Demonstrated product and gotten positive feedback",
+      "✅ Provided references or case studies from similar companies",
+      "✅ Clarified implementation timeline and support"
+    ],
+    "closing_signals_to_watch_for": [
+      "Customer asking about implementation timeline",
+      "Customer asking about training and support",
+      "Customer asking detailed questions about specific features",
+      "Customer wants to show it to team/boss (positive)",
+      "Customer asking about contract terms and payment",
+      "Customer comparing your solution vs competitor details"
+    ],
+    "closing_techniques": {
+      "assumptive_close": "So let's get you started - when would you like to schedule the implementation kickoff?",
+      "alternative_close": "Would you prefer to start with just CRM, or CRM + Books together?",
+      "urgency_close": "We have implementation slots available next week. After that, it's 3-4 week wait. Want to lock in next week?",
+      "roi_close": "We've calculated you'll save $X per month. Each month you wait costs you $X. Ready to start saving?",
+      "trial_close": "On a scale of 1-10, how confident are you that this solves your problem? [If 7+: Great, let's move forward. If <7: What would get you to a 10?]"
+    }
+  },
+  "keywords": ["quick reference", "cheat sheet", "pricing", "comparison", "closing"],
+  "tags": ["quick_reference", "cheat_sheet", "pricing", "competitors", "closing", "essential"]
+}

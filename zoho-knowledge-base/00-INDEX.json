@@ -1,0 +1,199 @@
+{
+  "knowledge_base_metadata": {
+    "title": "Complete Zoho Sales Knowledge Base",
+    "version": "1.0",
+    "last_updated": "2025-11-30",
+    "purpose": "Transform zero-knowledge salespeople into confident Zoho consultants",
+    "structure": "Modular, searchable, AI-ready format for Google Apps Script integration",
+    "languages": ["English"],
+    "total_modules": 6
+  },
+  "module_structure": [
+    {
+      "module_id": "01",
+      "module_name": "Zoho Products Knowledge",
+      "file": "products/01-zoho-products-complete.json",
+      "description": "Complete guide to all Zoho applications: what they do, who needs them, key features, pain points solved",
+      "records_count": 45,
+      "use_cases": [
+        "Looking up what a Zoho app does",
+        "Understanding which app solves which problem",
+        "Learning key features for sales pitch",
+        "Identifying target industries for each app"
+      ]
+    },
+    {
+      "module_id": "02",
+      "module_name": "Industry Mapping",
+      "file": "industries/02-industry-solutions.json",
+      "description": "Industry-by-industry breakdown: typical workflows, pain points, recommended Zoho solutions",
+      "records_count": 20,
+      "use_cases": [
+        "Preparing for industry-specific meetings",
+        "Understanding vertical-specific needs",
+        "Identifying common problems per industry",
+        "Recommending industry-proven bundles"
+      ]
+    },
+    {
+      "module_id": "03",
+      "module_name": "Multi-App Workflows",
+      "file": "workflows/03-solution-workflows.json",
+      "description": "Pre-built multi-app solutions for common business scenarios",
+      "records_count": 40,
+      "use_cases": [
+        "Building complete solutions for clients",
+        "Understanding which apps work together",
+        "Creating workflow diagrams for proposals",
+        "Upselling from single app to bundle"
+      ]
+    },
+    {
+      "module_id": "04",
+      "module_name": "Discovery Questions",
+      "file": "sales-tools/04-discovery-questions.json",
+      "description": "Strategic questions to ask clients to uncover pain points and qualify leads",
+      "records_count": 150,
+      "use_cases": [
+        "Discovery call preparation",
+        "Uncovering hidden problems",
+        "Qualifying leads effectively",
+        "Mapping client problems to solutions"
+      ]
+    },
+    {
+      "module_id": "05",
+      "module_name": "Sales Scripts & Objection Handling",
+      "file": "sales-tools/05-sales-scripts.json",
+      "description": "Ready-to-use scripts, email templates, objection responses, and pitch frameworks",
+      "records_count": 80,
+      "use_cases": [
+        "Handling price objections",
+        "Responding to competitor comparisons",
+        "Writing follow-up emails",
+        "Creating proposals quickly"
+      ]
+    },
+    {
+      "module_id": "06",
+      "module_name": "Quick Reference Guides",
+      "file": "sales-tools/06-quick-reference.json",
+      "description": "Cheat sheets, comparison charts, pricing guidance, and sales playbooks",
+      "records_count": 30,
+      "use_cases": [
+        "Quick lookups during calls",
+        "Comparing Zoho apps to competitors",
+        "Understanding pricing tiers",
+        "Learning integration capabilities"
+      ]
+    }
+  ],
+  "search_instructions": {
+    "for_apps_script": {
+      "recommendation": "Use vector search or keyword matching across all JSON files",
+      "search_fields": [
+        "tags",
+        "keywords",
+        "problem_keywords",
+        "industry",
+        "pain_points",
+        "questions",
+        "use_case"
+      ],
+      "response_format": "Return relevant records with context and related recommendations"
+    }
+  },
+  "html_interface_recommendations": {
+    "essential_fields": [
+      {
+        "field_type": "search_bar",
+        "purpose": "Main query input",
+        "placeholder": "Ask anything: What app handles inventory? How to sell to restaurants? What solves accounting issues?",
+        "search_mode": "intelligent_keyword_and_context"
+      },
+      {
+        "field_type": "dropdown",
+        "name": "query_category",
+        "options": [
+          "Product Knowledge (What does X do?)",
+          "Industry Solution (I'm meeting a client in X industry)",
+          "Problem Solution (Client has X problem)",
+          "Multi-App Bundle (Need workflow solution)",
+          "Sales Script (How do I pitch/handle objection?)",
+          "Quick Lookup (Just show me facts)"
+        ],
+        "purpose": "Help narrow down search scope"
+      },
+      {
+        "field_type": "dropdown",
+        "name": "industry_filter",
+        "options": [
+          "Any Industry",
+          "Real Estate",
+          "Healthcare",
+          "Manufacturing",
+          "Retail/E-commerce",
+          "Professional Services",
+          "Education",
+          "Finance/Accounting",
+          "Marketing Agency",
+          "Restaurants/Hospitality",
+          "Construction",
+          "Non-Profit",
+          "IT Services",
+          "Legal",
+          "Other"
+        ],
+        "purpose": "Filter by industry if relevant"
+      },
+      {
+        "field_type": "multi_select",
+        "name": "client_size",
+        "options": [
+          "Solo/Freelancer",
+          "Small Team (2-10)",
+          "SMB (11-50)",
+          "Mid-Market (51-200)",
+          "Enterprise (200+)"
+        ],
+        "purpose": "Help recommend appropriate solutions by company size"
+      },
+      {
+        "field_type": "toggle",
+        "name": "show_competitors",
+        "default": false,
+        "purpose": "Include competitor comparison in results"
+      },
+      {
+        "field_type": "toggle",
+        "name": "show_pricing",
+        "default": false,
+        "purpose": "Include pricing guidance"
+      }
+    ],
+    "response_display": {
+      "format": "structured_cards",
+      "sections": [
+        "Direct Answer",
+        "Recommended Apps",
+        "Key Talking Points",
+        "Discovery Questions to Ask",
+        "Related Solutions",
+        "Example Scripts"
+      ],
+      "actions": [
+        "Copy to Clipboard",
+        "Save to Favorites",
+        "Generate Email Draft",
+        "View Full Details"
+      ]
+    }
+  },
+  "usage_scenarios": [
+    "Pre-call research: Search by industry + company size",
+    "During call: Quick product lookup by name or problem",
+    "Post-call: Find workflows and create proposal",
+    "Learning mode: Browse by category to build knowledge",
+    "Objection handling: Search 'price objection' or 'vs Salesforce'"
+  ]
+}
