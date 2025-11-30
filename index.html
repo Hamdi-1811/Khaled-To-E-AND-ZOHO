@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مساعد مبيعات Zoho - e& Egypt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--p:#0066cc;--a:#ff6b35;--bg:#f8f9ff;--card:#ffffff;}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Tajawal',sans-serif;background:var(--bg);color:#1e293b;line-height:1.6}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    header{background:linear-gradient(135deg,var(--p,var(--a));color:white;padding:20px;border-radius:12px;margin-bottom:20px;text-align:center}
+    h1{font-size:24px;margin:10px 0}
+    .controls{margin:15px 0;display:flex;gap:10px;flex-wrap:wrap}
+    select, input, textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #ddd;font-family:inherit}
+    button{background:var(--p);color:white;border:none;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer}
+    button:hover{background:#0055aa}
+    .card{background:var(--card);padding:18px;margin:12px 0;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.05);border-right:5px solid var(--p)}
+    .short{line-height:1.7;font-size:15px}
+    .long{display:none;background:#f0f7ff;padding:15px;border-radius:8px;margin-top:10px;line-height:1.9}
+    .tags{font-size:13px;color:#64748b;margin-top:8px}
+    .copy-btn{font-size:12px;background:#10b981;color:white;padding:4px 8px;border-radius:6px}
+    .examples button{background:#e2e8f0;color:#1e293b;padding:10px;margin:5px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>مساعد مبيعات Zoho الذكي</h1>
+      <p>للفرق البيعية عبر الهاتف – e& Egypt</p>
+    </header>
+
+    <div class="controls">
+      <select id="sector">
+        <option value="">كل القطاعات</option>
+        <option>تجزئة</option><option>خدمات</option><option>تجارة إلكترونية</option><option>عام</option>
+      </select>
+      <select id="type">
+        <option value="">كل الأنواع</option>
+        <option>اكتشاف</option><option>اعتراض سعر</option><option>كروس سيل</option><option>فواتير</option>
+      </select>
+    </div>
+
+    <textarea id="question" placeholder="اكتب اللي قاله العميل بالظبط… مثال: احنا لسه بنستخدم اكسيل" rows="3"></textarea>
+    <button id="ask">ابحث واعرض الإجابة الصح</button>
+
+    <div class="examples">
+      <button data-q="احنا لسه بنشتغل يدوي بالكامل">يدوي / دفاتر</button>
+      <button data-q="لسه بنستخدم اكسيل">بنستخدم Excel</button>
+      <button data-q="السعر غالي اوي">السعر غالي</button>
+      <button data-q="ازاي اعمل فواتير اوتوماتيك">فواتير أوتوماتيك</button>
+      <button data-q="ليه اخد زوهو وان">ليه Zoho One؟</button>
+    </div>
+
+    <div id="results"></div>
+  </div>
+
+<script type="module">
+let kb = [];
+fetch('/kb.json').then(r => r.json()).then(d => kb = d.entries);
+
+function search() {
+  const q = document.getElementById('question').value.trim().toLowerCase();
+  const sector = document.getElementById('sector').value;
+  const type = document.getElementById('type').value;
+  if (!q) return;
+
+  let results = kb
+    .map(e => {
+      let score = 0;
+      if (e.title.toLowerCase().includes(q)) score += 6;
+      if (e.answer_short.toLowerCase().includes(q)) score += 4;
+      if (e.answer_long.toLowerCase().includes(q)) score += 3;
+      e.tags.forEach(t => { if (t.toLowerCase().includes(q)) score += 5; });
+      if (sector && e.sector !== sector) score -= 10;
+      if (type && e.type !== type) score -= 10;
+      return {...e, score};
+    })
+    .filter(e => e.score > 2)
+    .sort((a,b) => b.score - a.score)
+    .slice(0, 10);
+
+  const container = document.getElementById('results');
+  container.innerHTML = results.length === 0 
+    ? '<div class="card"><h3>ما لقيتش إجابة مطابقة 100%.. جرب كلمات تانية</h3></div>'
+    : results.map(r => `
+      <div class="card">
+        <h3>${r.title}</h3>
+        <div class="short">${r.answer_short}</div>
+        <button onclick="this.nextElementSibling.style.display='block';this.style.display='none'">الإجابة المفصلة</button>
+        <div class="long">${r.answer_long.replace(/\n/g,'<br>')}</div>
+        <div class="tags">${r.type} • ${r.sector}</div>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText('${r.answer_short}\n\n${r.answer_long}')">نسخ الكل</button>
+      </div>
+    `).join('');
+}
+
+document.getElementById('ask').onclick = search;
+document.getElementById('question').onkeydown = e => { if(e.key==='Enter' && !e.shiftKey) {e.preventDefault(); search();} };
+document.querySelectorAll('.examples button').forEach(b => b.onclick = () => {
+  document.getElementById('question').value = b.dataset.q;
+  search();
+});
+</script>
+</body>
+</html>
