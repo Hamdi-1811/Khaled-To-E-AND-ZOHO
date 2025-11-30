@@ -10,88 +10,191 @@
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Tajawal',sans-serif;background:var(--bg);color:#1e293b;line-height:1.6}
     .container{max-width:1100px;margin:0 auto;padding:20px}
-    header{background:linear-gradient(135deg,var(--p,var(--a));color:white;padding:20px;border-radius:12px;margin-bottom:20px;text-align:center}
+    header{background:linear-gradient(135deg,var(--p),var(--a));color:white;padding:20px;border-radius:12px;margin-bottom:20px;text-align:center}
     h1{font-size:24px;margin:10px 0}
     .controls{margin:15px 0;display:flex;gap:10px;flex-wrap:wrap}
-    select, input, textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #ddd;font-family:inherit}
-    button{background:var(--p);color:white;border:none;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer}
-    button:hover{background:#0055aa}
+    select, input, textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #ddd;font-family:inherit;font-size:15px}
+    button{background:var(--p);color:white;border:none;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer;font-weight:500}
+    button:hover{background:#0055aa;transform:translateY(-1px);transition:all 0.2s}
     .card{background:var(--card);padding:18px;margin:12px 0;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.05);border-right:5px solid var(--p)}
-    .short{line-height:1.7;font-size:15px}
-    .long{display:none;background:#f0f7ff;padding:15px;border-radius:8px;margin-top:10px;line-height:1.9}
-    .tags{font-size:13px;color:#64748b;margin-top:8px}
-    .copy-btn{font-size:12px;background:#10b981;color:white;padding:4px 8px;border-radius:6px}
-    .examples button{background:#e2e8f0;color:#1e293b;padding:10px;margin:5px;border-radius:8px}
+    .card h3{color:var(--p);margin-bottom:10px;font-size:18px}
+    .short{line-height:1.7;font-size:15px;margin:10px 0}
+    .long{display:none;background:#f0f7ff;padding:15px;border-radius:8px;margin-top:10px;line-height:1.9;white-space:pre-wrap}
+    .tags{font-size:13px;color:#64748b;margin-top:8px;border-top:1px solid #e2e8f0;padding-top:8px}
+    .copy-btn{font-size:12px;background:#10b981;color:white;padding:6px 12px;border-radius:6px;margin-top:8px}
+    .copy-btn:hover{background:#059669}
+    .show-more{font-size:14px;background:#e0e7ff;color:#3730a3;padding:8px 16px;margin-top:10px}
+    .show-more:hover{background:#c7d2fe}
+    .examples{margin:15px 0}
+    .examples button{background:#e2e8f0;color:#1e293b;padding:10px 15px;margin:5px;border-radius:8px;font-size:14px}
+    .examples button:hover{background:#cbd5e1}
+    #ask{width:100%;margin:10px 0;padding:15px;font-size:17px;font-weight:600}
+    .no-results{text-align:center;color:#64748b;padding:40px 20px}
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>مساعد مبيعات Zoho الذكي</h1>
+      <h1>🎯 مساعد مبيعات Zoho الذكي</h1>
       <p>للفرق البيعية عبر الهاتف – e& Egypt</p>
     </header>
 
     <div class="controls">
       <select id="sector">
         <option value="">كل القطاعات</option>
-        <option>تجزئة</option><option>خدمات</option><option>تجارة إلكترونية</option><option>عام</option>
+        <option>تجزئة</option><option>خدمات</option><option>تجارة إلكترونية</option><option>عام</option><option>محاسبة</option><option>تجارة</option><option>مبيعات</option><option>دعم</option><option>مشاريع</option><option>موارد بشرية</option><option>تسويق</option>
       </select>
       <select id="type">
         <option value="">كل الأنواع</option>
-        <option>اكتشاف</option><option>اعتراض سعر</option><option>كروس سيل</option><option>فواتير</option>
+        <option>اكتشاف</option><option>اعتراض سعر</option><option>كروس سيل</option><option>فواتير</option><option>سيناريو بيعي</option><option>تطبيقات</option><option>أسئلة</option>
       </select>
     </div>
 
     <textarea id="question" placeholder="اكتب اللي قاله العميل بالظبط… مثال: احنا لسه بنستخدم اكسيل" rows="3"></textarea>
-    <button id="ask">ابحث واعرض الإجابة الصح</button>
+    <button id="ask">🔍 ابحث واعرض الإجابة الصح</button>
 
     <div class="examples">
-      <button data-q="احنا لسه بنشتغل يدوي بالكامل">يدوي / دفاتر</button>
-      <button data-q="لسه بنستخدم اكسيل">بنستخدم Excel</button>
-      <button data-q="السعر غالي اوي">السعر غالي</button>
-      <button data-q="ازاي اعمل فواتير اوتوماتيك">فواتير أوتوماتيك</button>
-      <button data-q="ليه اخد زوهو وان">ليه Zoho One؟</button>
+      <button data-q="احنا لسه بنشتغل يدوي بالكامل">📝 يدوي / دفاتر</button>
+      <button data-q="لسه بنستخدم اكسيل">📊 بنستخدم Excel</button>
+      <button data-q="السعر غالي اوي">💰 السعر غالي</button>
+      <button data-q="ازاي اعمل فواتير اوتوماتيك">🧾 فواتير أوتوماتيك</button>
+      <button data-q="ليه اخد زوهو وان">🎁 ليه Zoho One؟</button>
     </div>
 
     <div id="results"></div>
   </div>
 
 <script type="module">
-let kb = [];
-fetch('kb.json').then(r => r.json()).then(d => kb = d.entries);
+const kb = [
+  {
+    "id": "scenario-1",
+    "title": "العميل يعمل يدوي بالكامل (دفاتر وورق)",
+    "answer_short": "افتح بالسؤال عن الوقت الضائع: 'كم ساعة يوميًا بتضيع في البحث عن فاتورة؟' ثم اقترح Zoho One للتحول الرقمي.",
+    "answer_long": "الافتتاح: 'أفهم أنكم تديرون عملياتكم بشكل تقليدي. هذا يدل على التزامكم بالعمل، لكن دعني أسألك: كم ساعة يومياً يقضيها فريقك في البحث عن معلومات العملاء أو الفواتير؟'\n\nأسئلة استكشافية:\n• كيف تحفظون معلومات العملاء؟ في دفاتر أم ملفات؟\n• ماذا يحدث إذا غاب الموظف المسؤول عن ملف معين؟\n• كم مرة واجهتم مشكلة في إيجاد معلومة قديمة؟\n• هل سبق وفقدتم بيانات مهمة؟\n\nنقاط الألم: ضياع الوقت، فقدان البيانات، صعوبة التنسيق، عدم التقارير، أخطاء بشرية.\n\nالحل: Zoho One (يغطي كل احتياجات الشركة في منصة واحدة، سهل الاستخدام، يوفر 90% من الوقت). أو ابدأ بـ Zoho CRM للعملاء + Zoho Books للفواتير.\n\nرسالة إقناع: 'تخيل أن كل معلومات عملائك، مبيعاتك، وفواتيرك في مكان واحد آمن، يمكن الوصول إليه في ثوانٍ من أي مكان.'",
+    "sector": "عام",
+    "type": "سيناريو بيعي",
+    "tags": ["يدوي", "دفاتر", "ورق", "تحول رقمي", "zoho one"]
+  },
+  {
+    "id": "scenario-2",
+    "title": "العميل يستخدم Excel",
+    "answer_short": "افتح بالسؤال عن التعاون: 'كم شخص يمكنه العمل على نفس الملف دون مشاكل؟' ثم اقترح Zoho CRM أو Books حسب الاستخدام.",
+    "answer_long": "الافتتاح: 'Excel أداة رائعة وأنتم بالفعل خطوة متقدمة عن العمل اليدوي. لكن دعني أسألك: كم شخص يمكنه العمل على نفس الملف في نفس الوقت دون مشاكل؟'\n\nأسئلة استكشافية:\n• كم ملف Excel لديكم لإدارة العمل؟\n• هل سبق وحدث تضارب في الإصدارات؟\n• كيف تشاركون الملفات بين الموظفين؟\n• هل واجهتم مشكلة فساد ملف أو خطأ في المعادلات؟\n• كم وقت يستغرق إعداد التقارير الشهرية من Excel؟\n\nنقاط الألم: عدم التعاون الفعال، تضارب الإصدارات، فقدان الملفات، صعوبة التقارير، عدم الأتمتة، غياب التنبيهات، عدم الربط بين الأقسام.\n\nالحل: إذا للعملاء والمبيعات → Zoho CRM. للمحاسبة والفواتير → Zoho Books. للشكاوى → Zoho Desk. والأفضل Zoho One للتكامل الكامل.",
+    "sector": "عام",
+    "type": "سيناريو بيعي",
+    "tags": ["excel", "إكسيل", "تضارب", "تقارير", "zoho crm", "zoho books"]
+  },
+  {
+    "id": "price-objection",
+    "title": "العميل بيقول السعر غالي",
+    "answer_short": "أفهم قلقك، بس خليني أحسبلك التكلفة الحقيقية: 6 برامج منفصلة = 1,190$/شهر، Zoho One = 925$/شهر + 40 تطبيق إضافي.",
+    "answer_long": "رد الإقناع: 'أفهم قلقك من السعر تمامًا، معظم العملاء بيقولوا كده في الأول. لكن لما بنحسب التكلفة الحقيقية للأخطاء اليدوية والوقت الضايع، Zoho بيطلع أرخص بكتير.\n\nمثال لـ 5 مستخدمين (سنوي):\n• Zoho CRM = 420$\n• Zoho Books = 100$\n• Zoho Inventory = 195$\n• Zoho Desk = 350$\n• Projects + Mail = 125$\nالمجموع = 1,190$/شهر.\n\nZoho One = 925$/شهر بس + 40 تطبيق مدمج.\nتوفير 22% + تكامل فوري. عايز أعملك مقارنة مخصصة؟'",
+    "sector": "عام",
+    "type": "اعتراض سعر",
+    "tags": ["سعر", "غالي", "مقارنة", "zoho one", "توفير"]
+  },
+  {
+    "id": "auto-invoices",
+    "title": "ازاي أعمل فواتير أوتوماتيك في Zoho Books؟",
+    "answer_short": "Sales > Recurring Invoices > New > حدد التكرار (شهري/سنوي) > فعّل Auto-send والدفع أونلاين.",
+    "answer_long": "خطوات مفصلة:\n1. اذهب إلى Sales > Recurring Invoices.\n2. اضغط New.\n3. اختر العميل والمنتجات.\n4. حدد الدورة (شهري/ربع سنوي).\n5. فعّل Auto-send via Email.\n6. فعّل Online Payments (Stripe/PayTabs).\nالفاتورة هتتولد وتتبعت وتتحصل تلقائيًا كل دورة، بدون تدخل بشري.",
+    "sector": "محاسبة",
+    "type": "فواتير",
+    "tags": ["فواتير", "أوتوماتيك", "recurring", "zoho books"]
+  },
+  {
+    "id": "zoho-one-cross",
+    "title": "ليه أقترح Zoho One دايمًا؟",
+    "answer_short": "لأنه أرخص من 3 برامج منفصلة، وفيه 45 تطبيق متكامل – توفير 22% + سهولة.",
+    "answer_long": "استراتيجية الكروس سيل:\nابدأ بـ Books/CRM، ثم: 'ليه وقف هنا؟ Zoho One يجيب كل الـ 45 تطبيق بـ 37$/مستخدم/شهر (سنوي)، مقابل 1,190$ لـ 6 برامج لوحدها. التكامل التلقائي يوفر 50% وقت. 90% العملاء بيندموا لو وقفوا عند واحد.'",
+    "sector": "عام",
+    "type": "كروس سيل",
+    "tags": ["zoho one", "bundle", "cross-sell", "توفير"]
+  },
+  {
+    "id": "crm-basics",
+    "title": "بيعمل إيه Zoho CRM؟",
+    "answer_short": "يلمّلك العملاء، الليدز، المتابعة، الصفقات، Pipelines في مكان واحد.",
+    "answer_long": "Zoho CRM:\n- جمع/تتبع الليدز.\n- Pipelines وStages.\n- Automation (Emails/Tasks).\n- تقارير مبيعات.\nمناسب لـ: عقارات، عيادات، كورسات، مطاعم. نقطة بيع: 'هتخسرش ولا عميل تاني.'",
+    "sector": "مبيعات",
+    "type": "تطبيقات",
+    "tags": ["crm", "ليدز", "pipelines", "zoho crm"]
+  },
+  {
+    "id": "books-accounting",
+    "title": "بيعمل إيه Zoho Books؟",
+    "answer_short": "فواتير، مصروفات، مخازن، تقارير مالية، ضرائب – مناسب للشركات الصغيرة.",
+    "answer_long": "Zoho Books:\n- فوترة أوتوماتيك.\n- تتبع مصروفات/مدفوعات.\n- تقارير P&L/Balance.\n- دعم VAT/ضرائب.\nنقطة بيع: 'هتشوف فلوسك رايحة فين من غير محاسب 24/7.'",
+    "sector": "محاسبة",
+    "type": "تطبيقات",
+    "tags": ["books", "فواتير", "محاسبة", "zoho books"]
+  },
+  {
+    "id": "discovery-questions",
+    "title": "أسئلة اكتشاف للعميل",
+    "answer_short": "• بتدير شغلك إزاي دلوقتي؟ • أكتر حاجة بتضيع وقت؟ • بتتمنى تكون إيه أوتوماتيك؟",
+    "answer_long": "أسئلة استكشافية:\n• بتدير شغلك إزاي دلوقتي؟ (يدوي/Excel/برنامج).\n• أكتر حاجة بتضيع وقت عندكم؟ (بحث/متابعة/تقارير).\n• بتتمنى تكون إيه أوتوماتيك؟ (فواتير/ليدز/حضور).\n• عندك مشاكل مع العملاء/الموظفين؟\n• بتحسب ربحك إزاي؟\nاستخدمها عشان تكشف الألم وتقترح الحل الصح.",
+    "sector": "عام",
+    "type": "أسئلة",
+    "tags": ["اكتشاف", "أسئلة", "pain points"]
+  }
+];
+
+function normalize(text) {
+  return text.toLowerCase()
+    .replace(/أ|إ|آ/g, 'ا')
+    .replace(/ة/g, 'ه')
+    .replace(/ى/g, 'ي')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 function search() {
-  const q = document.getElementById('question').value.trim().toLowerCase();
+  const q = normalize(document.getElementById('question').value);
   const sector = document.getElementById('sector').value;
   const type = document.getElementById('type').value;
   if (!q) return;
 
+  const qWords = q.split(' ').filter(w => w.length > 2);
+
   let results = kb
     .map(e => {
       let score = 0;
-      if (e.title.toLowerCase().includes(q)) score += 6;
-      if (e.answer_short.toLowerCase().includes(q)) score += 4;
-      if (e.answer_long.toLowerCase().includes(q)) score += 3;
-      e.tags.forEach(t => { if (t.toLowerCase().includes(q)) score += 5; });
-      if (sector && e.sector !== sector) score -= 10;
-      if (type && e.type !== type) score -= 10;
+      const titleN = normalize(e.title);
+      const shortN = normalize(e.answer_short);
+      const longN = normalize(e.answer_long);
+      const tagsN = e.tags.map(t => normalize(t)).join(' ');
+
+      qWords.forEach(word => {
+        if (titleN.includes(word)) score += 10;
+        if (shortN.includes(word)) score += 7;
+        if (longN.includes(word)) score += 4;
+        if (tagsN.includes(word)) score += 8;
+      });
+
+      if (titleN.includes(q)) score += 15;
+      if (tagsN.includes(q)) score += 12;
+
+      if (sector && e.sector !== sector) score = Math.max(0, score - 5);
+      if (type && e.type !== type) score = Math.max(0, score - 5);
+      
       return {...e, score};
     })
-    .filter(e => e.score > 2)
+    .filter(e => e.score > 3)
     .sort((a,b) => b.score - a.score)
     .slice(0, 10);
 
   const container = document.getElementById('results');
   container.innerHTML = results.length === 0 
-    ? '<div class="card"><h3>ما لقيتش إجابة مطابقة 100%.. جرب كلمات تانية</h3></div>'
+    ? '<div class="card no-results"><h3>⚠️ ما لقيتش إجابة مطابقة 100%</h3><p>جرب كلمات تانية أو فلتر مختلف</p></div>'
     : results.map(r => `
       <div class="card">
         <h3>${r.title}</h3>
         <div class="short">${r.answer_short}</div>
-        <button onclick="this.nextElementSibling.style.display='block';this.style.display='none'">الإجابة المفصلة</button>
-        <div class="long">${r.answer_long.replace(/\n/g,'<br>')}</div>
-        <div class="tags">${r.type} • ${r.sector}</div>
-        <button class="copy-btn" onclick="navigator.clipboard.writeText('${r.answer_short}\n\n${r.answer_long}')">نسخ الكل</button>
+        <button class="show-more" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">📖 الإجابة المفصلة</button>
+        <div class="long">${r.answer_long}</div>
+        <div class="tags">📌 ${r.type} • ${r.sector}</div>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText(\`${r.answer_short}\\n\\n${r.answer_long}\`);this.textContent='✅ تم النسخ!'">📋 نسخ الكل</button>
       </div>
     `).join('');
 }
